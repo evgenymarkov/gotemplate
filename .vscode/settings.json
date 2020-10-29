@@ -10,7 +10,6 @@
   "go.languageServerExperimentalFeatures": {
     "documentLink": false
   },
-  "go.useGoProxyToCheckForToolUpdates": false,
   "[go]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {

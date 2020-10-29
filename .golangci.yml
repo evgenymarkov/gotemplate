@@ -28,9 +28,9 @@ linters:
     # Formatting
     #
 
-    # Does everything that gofmt does and additionally checks unused imports
-    # https://pkg.go.dev/golang.org/x/tools/cmd/goimports
-    - goimports
+    # Checks whether code was gofmt-ed
+    # https://golang.org/cmd/gofmt
+    - gofmt
 
     # Line length linter, used to enforce line length in files
     # https://github.com/walle/lll

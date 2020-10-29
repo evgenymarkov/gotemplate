@@ -6,7 +6,7 @@ setup:
 .PHONY: format
 format:
 	@echo Formatting files
-	@goimports -w .
+	@gofmt -s -w .
 
 .PHONY: lint
 lint:
