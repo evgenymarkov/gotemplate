@@ -1,0 +1,26 @@
+{
+  "editor.rulers": [
+    100
+  ],
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--fast"
+  ],
+  "go.useLanguageServer": true,
+  "go.languageServerExperimentalFeatures": {
+    "documentLink": false
+  },
+  "go.useGoProxyToCheckForToolUpdates": false,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[go.mod]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  }
+}

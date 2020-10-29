@@ -1,0 +1,113 @@
+linters:
+  disable-all: true
+  enable:
+    #
+    # Bugs
+    #
+
+    # Checks that code does not contain non-ASCII identifiers
+    # https://github.com/tdakkota/asciicheck
+    - asciicheck
+
+    # Program for checking for unchecked errors in go programs
+    # https://github.com/kisielk/errcheck
+    - errcheck
+
+    # Examines Go source code and reports suspicious constructs
+    # https://golang.org/cmd/vet
+    - govet
+
+    # Applies a ton of static analysis checks
+    # https://staticcheck.io/docs
+    - staticcheck
+
+    # Like the frontend of a Go compiler, parses and type-checks Go code
+    - typecheck
+
+    #
+    # Formatting
+    #
+
+    # Does everything that gofmt does and additionally checks unused imports
+    # https://pkg.go.dev/golang.org/x/tools/cmd/goimports
+    - goimports
+
+    # Line length linter, used to enforce line length in files
+    # https://github.com/walle/lll
+    - lll
+
+    # Whitespace linter that forces use empty lines
+    # https://github.com/bombsimon/wsl
+    - wsl
+
+    #
+    # Good practices
+    #
+
+    # Finds assignments/declarations with too many blank identifiers
+    # https://github.com/alexkohler/dogsled
+    - dogsled
+
+    # Checks that no global variables exist
+    # https://github.com/leighmcculloch/gochecknoglobals
+    - gochecknoglobals
+
+    # Checks that no init functions are present code
+    # https://github.com/leighmcculloch/gochecknoinits
+    - gochecknoinits
+
+    # Finds repeated strings that could be replaced by a constant
+    # https://github.com/jgautheron/goconst
+    - goconst
+
+    # Checks if comments end in a period
+    # https://github.com/tetafro/godot
+    - godot
+
+    # An analyzer to detect magic numbers
+    # https://github.com/tommy-muehle/go-mnd
+    - gomnd
+
+    # Linter that makes you use a separate _test package
+    # https://github.com/maratori/testpackage
+    - testpackage
+
+    #
+    # Redundant code
+    #
+
+    # Linter for code that specializes in simplifying a code
+    # https://github.com/dominikh/go-tools/tree/master/simple
+    - gosimple
+
+    # Detects when assignments to existing variables are not used
+    # https://github.com/gordonklaus/ineffassign
+    - ineffassign
+
+    # Finds unused struct fields
+    # https://gitlab.com/opennota/check/-/tree/master/cmd/structcheck
+    - structcheck
+
+    # Finds unnecessary type conversions
+    # https://github.com/mdempsky/unconvert
+    - unconvert
+
+    # Checks code for unused constants, variables, functions and types
+    # https://github.com/dominikh/go-tools/tree/master/unused
+    - unused
+
+    # Finds unused global variables and constants
+    # https://gitlab.com/opennota/check/-/tree/master/cmd/varcheck
+    - varcheck
+
+    #
+    # Security
+    #
+
+    # Inspects code for security problems
+    # https://github.com/securego/gosec
+    - gosec
+
+linters-settings:
+  lll:
+    line-length: 100
