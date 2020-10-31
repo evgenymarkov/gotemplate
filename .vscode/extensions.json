@@ -1,6 +1,8 @@
 {
   "recommendations": [
     "golang.go",
-    "mhutchie.git-graph"
+    "mhutchie.git-graph",
+    "timonwong.shellcheck",
+    "foxundermoon.shell-format"
   ]
 }

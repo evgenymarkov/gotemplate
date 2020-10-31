@@ -6,12 +6,14 @@ setup:
 .PHONY: format
 format:
 	@echo Running formatters...
-	@gofmt -s -w .
+	@.scripts/format-golang.sh
+	@.scripts/format-shell.sh
 
 .PHONY: lint
 lint:
 	@echo Running linters...
-	@golangci-lint run
+	@.scripts/lint-golang.sh
+	@.scripts/lint-shell.sh
 
 .PHONY: test
 test:
