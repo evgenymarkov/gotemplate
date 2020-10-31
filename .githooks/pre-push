@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+make format
+make lint
+make test
+
+exit 0

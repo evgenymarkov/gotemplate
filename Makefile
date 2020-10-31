@@ -1,19 +1,19 @@
 .PHONY: setup
 setup:
-	@echo Installing tools
-	@cd .tools && make setup
+	@echo Setting up git hooks
+	@git config core.hooksPath .githooks
 
 .PHONY: format
 format:
-	@echo Formatting files
+	@echo Running formatters...
 	@gofmt -s -w .
 
 .PHONY: lint
 lint:
-	@echo Running linters
+	@echo Running linters...
 	@golangci-lint run
 
 .PHONY: test
 test:
-	@echo Running tests
-	go test ./...
+	@echo Running tests...
+	@go test ./...
