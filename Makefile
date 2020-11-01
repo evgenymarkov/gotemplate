@@ -1,5 +1,11 @@
 .PHONY: setup
 setup:
+	@echo Installing dependencies
+	@.scripts/install-package.sh go
+	@.scripts/install-package.sh golangci-lint
+	@.scripts/install-package.sh shfmt
+	@.scripts/install-package.sh shellcheck
+
 	@echo Setting up git hooks
 	@git config core.hooksPath .githooks
 
