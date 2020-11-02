@@ -13,6 +13,9 @@ trim_trailing_whitespace = true
 indent_size = 4
 indent_style = tab
 
+[*.sh]
+space_redirects = true
+
 [{*.go,go.mod,go.sum}]
 indent_size = 4
 indent_style = tab
