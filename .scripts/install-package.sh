@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 set -e
 export HOMEBREW_NO_AUTO_UPDATE=1
